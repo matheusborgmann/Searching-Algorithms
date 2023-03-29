@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node main.js"
   },
-  "author": "Matheus Borgmann",
+  "author": "Gustavo Teixeira",
   "license": "ISC",
   "dependencies": {
     "prompt-sync": "^4.2.0"
