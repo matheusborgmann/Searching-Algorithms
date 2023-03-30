@@ -8,7 +8,7 @@ const prompt = require("prompt-sync")();
 const loadGen = () => {
     let opt, size, tempArr = []
 
-    console.info(
+    console.log(
         "Choose a the size of the array:\n1 - 1000 elements \n2 - 10000 elements \n3 - 50000 elements \n4 - 100000 elements \n5 - 500000 elements \n6 - 1000000 elements \n0 - Exit program.\n"
       );
 
