@@ -1,6 +1,6 @@
-const linearSearch = (arr, x) => {
+const linearSearch = (arr, targerNumber) => {
   for (let i in arr) {
-    if (arr[i] === x) return i;
+    if (arr[i] === targerNumber) return i;
   }
 
   return -1;
