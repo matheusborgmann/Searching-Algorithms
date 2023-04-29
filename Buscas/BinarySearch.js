@@ -2,25 +2,25 @@ function compare(a, b) {
   return a - b;
 }
 
-const binarySearch = (arr, x) => {
+const binarySearch = (array, key) => {
   let low = 0;
-  let rear = arr.length - 1;
+  let rear = array.length - 1;
 
   while (low <= rear) {
-    let mid = Math.floor((low + rear) / 2);
+    let middle = Math.floor((low + rear) / 2);
 
-    if (arr[mid] == x) {
-      return mid;
+    if (array[middle] == key) {
+      return middle;
     }
 
-    let cmp = compare(x, arr[mid]);
+    let comparation = compare(key, array[middle]);
 
-    if (cmp > 0) {
-      low = mid + 1;
-    } else if (cmp < 0) {
-      rear = mid - 1;
+    if (comparation > 0) {
+      low = middle + 1;
+    } else if (comparation < 0) {
+      rear = middle - 1;
     } else {
-      return mid;
+      return middle;
     }
   }
 
@@ -28,3 +28,10 @@ const binarySearch = (arr, x) => {
 };
 
 module.exports = binarySearch;
+
+
+
+
+
+
+
